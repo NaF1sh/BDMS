@@ -32,7 +32,9 @@
       </button>
     </main>
     <section class="donation-section">
-      <button class="donation-button">Fund Us</button>
+      <button class="donation-button" onclick="location.href='fund.html'">
+        Fund Us
+      </button>
       <p class="donation-tag">Your support helps save lives!</p>
       <div class="articles-container">
         <div class="article-box">
@@ -76,7 +78,6 @@
           donationSection.classList.remove("scrolled"); // Remove class when out of view
         }
       }
-      // Event listener for scroll
       window.addEventListener("scroll", checkScroll);
     </script>
   </body>

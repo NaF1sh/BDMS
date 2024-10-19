@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -14,8 +14,8 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
-  position: relative;
   width: 100%;
+  position: relative;
 }
 
 header .home-button {
@@ -33,15 +33,28 @@ header .home-button {
   transition: background-color 0.3s, color 0.3s;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+header .home-button:hover {
+  background-color: #ff5e5e;
+  color: #fff;
 }
 
-form {
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tagline {
+  font-size: 24px;
+  color: #ff5e5e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.donation-form {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -52,45 +65,45 @@ form {
   flex-direction: column;
 }
 
-label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
+.donation-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="number"],
-select {
+.donation-form input[type="text"],
+.donation-form input[type="email"],
+.donation-form input[type="number"],
+.donation-form input[type="tel"] {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+.donation-form input[type="submit"] {
   background-color: #ff5e5e;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
+  font-size: 18px;
   box-sizing: border-box;
+  transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+.donation-form input[type="submit"]:hover {
   background-color: #e55555;
-  box-sizing: border-box;
 }
 
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
 }
