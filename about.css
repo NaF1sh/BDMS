@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -31,60 +31,32 @@ header .home-button {
 }
 
 main {
+  flex-grow: 1;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
-button {
-  padding: 20px;
-}
-form {
+
+section {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 800px; /* Wider form */
+  width: 60%;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="number"],
-select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color: #ff5e5e;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-input[type="submit"]:hover {
-  background-color: #e55555;
-  box-sizing: border-box;
+section h2 {
+  color: #ff5e5e;
+  margin-top: 0;
 }
 
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px 0;
   width: 100%;
 }
